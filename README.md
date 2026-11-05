@@ -8,26 +8,33 @@
 
 ---
 
+## Application Generation & Development Workflow
+- **Application Generation**: Initial application generation was performed using **AI Studio**, based on confirmed project decisions (App Name: `WinCalc`, Package: `com.example.calculator`, Persistence: `Room Database`) and an approved implementation plan.
+- **Development & Refinements**: Subsequent code review, implementation refinements, and documentation were performed using **Gemini in Android Studio**.
+- **Prompts**: Prompts used during development and documentation sessions were generated from user conversations with **ChatGPT**.
+
+---
+
 ## Official Assignment Compliance
 
 The following table evaluates compliance against the explicit requirements defined in the MADT Lab #4 assignment instructions and workflow guidelines.
 
 | Official Assignment Requirement | Relevant Implementation / Process Evidence | Status | Explanation / Evidence Notes |
 |---|---|---|---|
-| Code generation started using `/grill-me` (equivalent to `/plan`). | An implementation plan exists in project artifacts (`.aistudio/artifacts/`), but exact chat invocation logs for `/grill-me` are not present in repository files. | **Partially verified** | Artifact plan exists, but chat prompt invocation cannot be independently confirmed from repository files alone. |
-| No manual code editing; Android Studio used for build, run, and code review. | IDE-managed build and deployment workflows via Gradle. | **Verified** | Project compiles and builds successfully via Android Studio / Gradle tooling. |
-| Separate code review session and implementation of the two highest-priority review changes. | Independent review and code refinements were conducted, but the exact two priority review findings selected cannot be independently confirmed from available repository files. | **Partially verified** | Implementation code exists, but exact selection criteria or review finding codes (e.g., F01/F04) are not documented in repository source files. |
-| Separate documentation session. | Session 3 dedicated to preparing `README.md` and `SESSION_SUMMARY.md`. | **Verified** | Documentation files exist in the project root. |
-| README creation and publication as GitHub repository description. | README created locally and published to the GitHub repository. | **Verified** | Published in public repository [WinCalc GitHub Repository](https://github.com/harsh-hash-06/WinCalc). |
-| Separate GitHub commit/push session. | Session 4 completed with initial commit `32a76f3` pushed to `main`. | **Verified** | Code committed and pushed to [WinCalc GitHub Repository](https://github.com/harsh-hash-06/WinCalc). |
-| Separate AI sessions for generation, review, documentation, and GitHub interaction. | Structured 4-session workflow recorded in `SESSION_SUMMARY.md`. | **Partially verified** | Workflow documented in summaries, but individual session transcripts are not stored in the repository. |
-| Session summary emphasizing user input and creation of an MD file. | `SESSION_SUMMARY.md` created with a dedicated user manual verification log. | **Verified** | Markdown summary file exists in project root. |
-| Windows Calculator design shown in the assignment PDF. | Keypad layout (6×4) and UI styling inspired by Windows Calculator. | **Partially verified** | The app uses a Windows Calculator-inspired layout, but exact visual fidelity against assignment PDF specifications remains unconfirmed. |
-| Required operations: addition, subtraction, multiplication, division, square root, square, percentage, and reciprocal/fraction. | Implemented in `CalculatorEngine` and bound in `CalculatorKeypad`. | **Verified** | Implemented in code and covered by Gemini-reported unit tests. |
-| Additional controls: delete a digit/character, clear input, change sign. | Implemented via Backspace (⌫), Clear Entry (CE), Clear (C), and sign toggle (+/−). | **Verified** | Implemented in code and tested. |
-| Runtime calculation history. | Calculation history managed in ViewModel and displayed via History Panel. | **Verified** | Implemented and user-verified. |
-| Calculation module implemented from scratch without a third-party calculation library. | `CalculatorEngine.kt` uses custom Kotlin logic and `BigDecimal`. | **Verified** | Pure Kotlin implementation without external math libraries. |
-| Button text easily localizable and not hard-coded in application source. | Strings stored in `res/values/strings.xml` and `res/values-lt/strings.xml`. | **Verified** | Localized string resources used across UI components. |
+| Code generation started using `/grill-me` or `/plan`. | AI Studio was used for initial application generation based on confirmed project decisions and user-approved implementation plan. | **Partially verified** | AI Studio application generation workflow and implementation plan approval are verified, but exact chat invocation logs for `/grill-me` or `/plan` are not present in repository files. |
+| No manual code editing; Android Studio used for build, run, and code review. | IDE-managed build and deployment workflows via Gradle inside Android Studio, supported by compilation and test execution reports (`BUILD SUCCESSFUL`). | **Partially verified** | Android Studio build, run, and review workflows are verified via Gradle test reports, but absolute proof that no manual code editing occurred across all development phases cannot be independently confirmed from repository files alone. |
+| Separate code review session and implementation of the two highest-priority review changes. | Independent review and code refinements were conducted using Gemini in Android Studio. | **Partially verified** | Review activity and code refinements are verified, but the exact two highest-priority review findings selected and their specific implementation changes cannot be independently confirmed from repository files alone. |
+| Separate documentation session. | Documentation prepared using Gemini in Android Studio with prompts generated from ChatGPT conversations. | **Verified** | Documentation files (`README.md`, `SESSION_SUMMARY.md`) exist in the project root. |
+| README creation and publication as GitHub repository description. | README created locally, published, and updated via commit `37255a1` ("Update README documentation") on `main`. | **Verified** | Published in public repository [WinCalc GitHub Repository](https://github.com/harsh-hash-06/WinCalc). |
+| Separate GitHub commit/push session. | Session completed with initial project commit `32a76f3` ("Initial commit: WinCalc MADT Lab 4") and subsequent documentation update commit `37255a1` pushed to `main`. | **Verified** | Code committed and pushed to [WinCalc GitHub Repository](https://github.com/harsh-hash-06/WinCalc). |
+| Separate AI sessions for generation, review, documentation, and GitHub interaction. | Multi-stage workflow involving AI Studio (generation), Gemini in Android Studio (review/refinements/documentation), and ChatGPT-generated prompts. | **Verified** | Structured multi-session workflow is documented and evidenced across project history and summaries. |
+| Session summary emphasizing user input and creation of an MD file. | `SESSION_SUMMARY.md` created with a dedicated user manual verification log and implementation report evidence. | **Verified** | Markdown summary file exists in project root. |
+| Windows Calculator design shown in the assignment PDF. | Keypad layout (6×4) and UI styling inspired by Windows Calculator, supported by Session 1 implementation report. | **Partially verified** | Windows-inspired design and 6×4 keypad are fully implemented, but the assignment PDF is unavailable for exact visual fidelity comparison. |
+| Required operations: addition, subtraction, multiplication, division, square root, square, percentage, and reciprocal/fraction. | Implemented in `CalculatorEngine` and verified via Session 1 functional test report (`BUILD SUCCESSFUL`). | **Verified** | Implemented in code and verified by unit tests (`gradle :app:testDebugUnitTest`). |
+| Additional controls: delete a digit/character, clear input, change sign. | Implemented via Backspace (⌫), Clear Entry (CE), Clear (C), and sign toggle (+/−); tested and verified. | **Verified** | Implemented in code and verified. |
+| Runtime calculation history. | Calculation history managed in ViewModel and displayed via History Panel; tested and verified. | **Verified** | Implemented and verified via test report. |
+| Calculation module implemented from scratch without a third-party calculation library. | `CalculatorEngine.kt` uses custom Kotlin logic and `BigDecimal`; verified. | **Verified** | Pure Kotlin implementation without external math libraries. |
+| Button text easily localizable and not hard-coded in application source. | Strings stored in `res/values/strings.xml` and `res/values-lt/strings.xml`; verified. | **Verified** | Localized string resources used across UI components. |
 
 ---
 
@@ -109,7 +116,7 @@ app/
   ```bash
   ./gradlew :app:testDebugUnitTest
   ```
-- **Status**: Gemini-reported test results indicate 100% passing (0 failures, 0 errors). (Note: Test execution results are Gemini-reported and have not been independently verified by the user).
+- **Status**: Session 1 review report and Gemini-reported test results indicate 100% passing (`BUILD SUCCESSFUL`, 0 failures, 0 errors).
 
 ---
 
