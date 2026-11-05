@@ -1,7 +1,10 @@
 # WinCalc — Android Calculator App (MADT Lab #4)
 
 ## Project Overview and Purpose
-**WinCalc** is an Android calculator app inspired by the Windows Calculator design, developed as part of **Mobile Application Development Technologies (MADT) Lab #4**. It implements standard arithmetic operations, unary functions, calculation history, and localization using Jetpack Compose, Kotlin, and MVVM architecture.
+**WinCalc** is an Android calculator app inspired by the Windows Calculator design, developed as part of **Mobile Application Development Technologies (MADT Lab #4)**. It implements standard arithmetic operations, unary functions, calculation history, and localization using Jetpack Compose, Kotlin, and MVVM architecture.
+
+- **GitHub Repository**: [WinCalc GitHub Repository](https://github.com/harsh-hash-06/WinCalc)
+- **Session Progress Report**: [SESSION_SUMMARY.md](SESSION_SUMMARY.md)
 
 ---
 
@@ -15,13 +18,13 @@ The following table evaluates compliance against the explicit requirements defin
 | No manual code editing; Android Studio used for build, run, and code review. | IDE-managed build and deployment workflows via Gradle. | **Verified** | Project compiles and builds successfully via Android Studio / Gradle tooling. |
 | Separate code review session and implementation of the two highest-priority review changes. | Independent review and code refinements were conducted, but the exact two priority review findings selected cannot be independently confirmed from available repository files. | **Partially verified** | Implementation code exists, but exact selection criteria or review finding codes (e.g., F01/F04) are not documented in repository source files. |
 | Separate documentation session. | Session 3 dedicated to preparing `README.md` and `SESSION_SUMMARY.md`. | **Verified** | Documentation files exist in the project root. |
-| README creation and publication as GitHub repository description. | README created locally; publication pending user approval in Session 4. | **Pending** | Repository not yet created or published on GitHub. |
-| Separate GitHub commit/push session. | Session 4 reserved for Git commit and remote push. | **Pending** | Session 4 has not started; no Git repository initialized. |
+| README creation and publication as GitHub repository description. | README created locally and published to the GitHub repository. | **Verified** | Published in public repository [WinCalc GitHub Repository](https://github.com/harsh-hash-06/WinCalc). |
+| Separate GitHub commit/push session. | Session 4 completed with initial commit `32a76f3` pushed to `main`. | **Verified** | Code committed and pushed to [WinCalc GitHub Repository](https://github.com/harsh-hash-06/WinCalc). |
 | Separate AI sessions for generation, review, documentation, and GitHub interaction. | Structured 4-session workflow recorded in `SESSION_SUMMARY.md`. | **Partially verified** | Workflow documented in summaries, but individual session transcripts are not stored in the repository. |
 | Session summary emphasizing user input and creation of an MD file. | `SESSION_SUMMARY.md` created with a dedicated user manual verification log. | **Verified** | Markdown summary file exists in project root. |
 | Windows Calculator design shown in the assignment PDF. | Keypad layout (6×4) and UI styling inspired by Windows Calculator. | **Partially verified** | The app uses a Windows Calculator-inspired layout, but exact visual fidelity against assignment PDF specifications remains unconfirmed. |
 | Required operations: addition, subtraction, multiplication, division, square root, square, percentage, and reciprocal/fraction. | Implemented in `CalculatorEngine` and bound in `CalculatorKeypad`. | **Verified** | Implemented in code and covered by Gemini-reported unit tests. |
-| Additional controls: delete a digit/character, clear input, change sign. | Implemented via Backspace (`⌫`), Clear Entry (`CE`), Clear (`C`), and sign toggle (`+/−`). | **Verified** | Implemented in code and tested. |
+| Additional controls: delete a digit/character, clear input, change sign. | Implemented via Backspace (⌫), Clear Entry (CE), Clear (C), and sign toggle (+/−). | **Verified** | Implemented in code and tested. |
 | Runtime calculation history. | Calculation history managed in ViewModel and displayed via History Panel. | **Verified** | Implemented and user-verified. |
 | Calculation module implemented from scratch without a third-party calculation library. | `CalculatorEngine.kt` uses custom Kotlin logic and `BigDecimal`. | **Verified** | Pure Kotlin implementation without external math libraries. |
 | Button text easily localizable and not hard-coded in application source. | Strings stored in `res/values/strings.xml` and `res/values-lt/strings.xml`. | **Verified** | Localized string resources used across UI components. |
