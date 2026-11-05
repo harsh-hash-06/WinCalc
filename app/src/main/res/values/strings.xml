@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">WinCalc</string>
+    <string name="calc_mode_standard">Standard</string>
+    <string name="content_desc_menu">Open navigation menu</string>
+    <string name="content_desc_keep_on_top">Keep on top</string>
+    <string name="content_desc_history">Calculation history</string>
+    <string name="content_desc_trash">Clear history</string>
+    <string name="history_title">History</string>
+    <string name="history_empty">There\'s no history yet</string>
+    <string name="memory_title">Memory</string>
+    <string name="memory_empty">There\'s nothing saved in memory</string>
+    <string name="history_cleared">History cleared</string>
+    <string name="confirm_clear_history">Clear all calculation history?</string>
+    <string name="clear">Clear</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_cannot_divide_by_zero">Cannot divide by zero</string>
+    <string name="error_invalid_input">Invalid input</string>
+    <string name="error_overflow">Overflow</string>
+    <string name="window_pinning_not_supported">Window pinning is a desktop feature not supported on Android mobile devices</string>
+    <string name="menu_title">Calculator Modes</string>
+    <string name="menu_standard">Standard</string>
+    <string name="menu_active">Active</string>
+    <string name="menu_desc">Standard calculator mode is fully implemented for MADT Lab #4.</string>
+
+    <!-- Button labels -->
+    <string name="btn_percent">%</string>
+    <string name="btn_ce">CE</string>
+    <string name="btn_c">C</string>
+    <string name="btn_backspace">⌫</string>
+    <string name="btn_reciprocal">¹/x</string>
+    <string name="btn_square">x²</string>
+    <string name="btn_sqrt">²√x</string>
+    <string name="btn_divide">÷</string>
+    <string name="btn_multiply">×</string>
+    <string name="btn_subtract">−</string>
+    <string name="btn_add">+</string>
+    <string name="btn_equals">=</string>
+    <string name="btn_negate">+/−</string>
+    <string name="btn_decimal">.</string>
+
+    <!-- Memory labels -->
+    <string name="btn_mc">MC</string>
+    <string name="btn_mr">MR</string>
+    <string name="btn_m_plus">M+</string>
+    <string name="btn_m_minus">M−</string>
+    <string name="btn_ms">MS</string>
+    <string name="btn_mv">Mv</string>
+
+    <!-- Content descriptions -->
+    <string name="desc_percent">Percent</string>
+    <string name="desc_ce">Clear entry</string>
+    <string name="desc_c">Clear</string>
+    <string name="desc_backspace">Backspace</string>
+    <string name="desc_reciprocal">Reciprocal</string>
+    <string name="desc_square">Square</string>
+    <string name="desc_sqrt">Square root</string>
+    <string name="desc_divide">Divide</string>
+    <string name="desc_multiply">Multiply</string>
+    <string name="desc_subtract">Minus</string>
+    <string name="desc_add">Plus</string>
+    <string name="desc_equals">Equals</string>
+    <string name="desc_negate">Positive or negative</string>
+    <string name="desc_decimal">Decimal point</string>
+    <string name="desc_digit">Digit %1$s</string>
+    <string name="desc_mc">Clear all memory</string>
+    <string name="desc_mr">Memory recall</string>
+    <string name="desc_m_plus">Memory add</string>
+    <string name="desc_m_minus">Memory subtract</string>
+    <string name="desc_ms">Memory store</string>
+    <string name="desc_mv">Memory list</string>
+    <string name="language_toggle">Switch to Lithuanian</string>
+</resources>

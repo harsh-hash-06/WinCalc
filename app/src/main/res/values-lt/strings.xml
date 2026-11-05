@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">WinCalc</string>
+    <string name="calc_mode_standard">Standartinis</string>
+    <string name="content_desc_menu">Atidaryti navigacijos meniu</string>
+    <string name="content_desc_keep_on_top">Visada viršuje</string>
+    <string name="content_desc_history">Skaičiavimų istorija</string>
+    <string name="content_desc_trash">Išvalyti istoriją</string>
+    <string name="history_title">Istorija</string>
+    <string name="history_empty">Istorijos dar nėra</string>
+    <string name="memory_title">Atmintis</string>
+    <string name="memory_empty">Atmintyje nieko neišsaugota</string>
+    <string name="history_cleared">Istorija išvalyta</string>
+    <string name="confirm_clear_history">Išvalyti visą skaičiavimų istoriją?</string>
+    <string name="clear">Išvalyti</string>
+    <string name="cancel">Atšaukti</string>
+    <string name="error_cannot_divide_by_zero">Dalyba iš nulio negalima</string>
+    <string name="error_invalid_input">Neteisinga įvestis</string>
+    <string name="error_overflow">Perpildymas</string>
+    <string name="window_pinning_not_supported">Langų prismeigimas yra stalinio kompiuterio funkcija, nepalaikoma Android mobiliuosiuose įrenginiuose</string>
+    <string name="menu_title">Skaičiuotuvo režimai</string>
+    <string name="menu_standard">Standartinis</string>
+    <string name="menu_active">Aktyvus</string>
+    <string name="menu_desc">Standartinis skaičiuotuvo režimas visiškai įgyvendintas MADT Lab #4 laboratoriniam darbui.</string>
+
+    <!-- Button labels -->
+    <string name="btn_percent">%</string>
+    <string name="btn_ce">CE</string>
+    <string name="btn_c">C</string>
+    <string name="btn_backspace">⌫</string>
+    <string name="btn_reciprocal">¹/x</string>
+    <string name="btn_square">x²</string>
+    <string name="btn_sqrt">²√x</string>
+    <string name="btn_divide">÷</string>
+    <string name="btn_multiply">×</string>
+    <string name="btn_subtract">−</string>
+    <string name="btn_add">+</string>
+    <string name="btn_equals">=</string>
+    <string name="btn_negate">+/−</string>
+    <string name="btn_decimal">,</string>
+
+    <!-- Memory labels -->
+    <string name="btn_mc">MC</string>
+    <string name="btn_mr">MR</string>
+    <string name="btn_m_plus">M+</string>
+    <string name="btn_m_minus">M−</string>
+    <string name="btn_ms">MS</string>
+    <string name="btn_mv">Mv</string>
+
+    <!-- Content descriptions -->
+    <string name="desc_percent">Procentas</string>
+    <string name="desc_ce">Išvalyti įvestį</string>
+    <string name="desc_c">Išvalyti</string>
+    <string name="desc_backspace">Trinti atgal</string>
+    <string name="desc_reciprocal">Atvirkštinis dydis</string>
+    <string name="desc_square">Kvadratas</string>
+    <string name="desc_sqrt">Kvadratinė šaknis</string>
+    <string name="desc_divide">Dalyti</string>
+    <string name="desc_multiply">Dauginti</string>
+    <string name="desc_subtract">Atimtis</string>
+    <string name="desc_add">Sudėtis</string>
+    <string name="desc_equals">Lygu</string>
+    <string name="desc_negate">Keisti ženklą</string>
+    <string name="desc_decimal">Kablelis</string>
+    <string name="desc_digit">Skaitmuo %1$s</string>
+    <string name="desc_mc">Išvalyti visą atmintį</string>
+    <string name="desc_mr">Iškviesti iš atminties</string>
+    <string name="desc_m_plus">Pridėti prie atminties</string>
+    <string name="desc_m_minus">Atimti iš atminties</string>
+    <string name="desc_ms">Išsaugoti atmintyje</string>
+    <string name="desc_mv">Atminties sąrašas</string>
+    <string name="language_toggle">Perjungti į anglų kalbą</string>
+</resources>

@@ -1,0 +1,6 @@
+{
+  "name": "WinCalc",
+  "description": "Windows Calculator replica for Android with custom BigDecimal calculation engine, Room persistent history, and English/Lithuanian localization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
